@@ -1,16 +1,6 @@
- <?php echo $info ; ?>
-<hr>
-ทดสอบ one <?php //echo $a; ?> <br>
-ทดสอบ tree <?php //echo $b; ?> <br>
-ทดสอบ tree <?php// echo $a+$b; ?> <br>
-
-<?php
-$A = 100;
-$B = 33;
-$sum = $A + $B;
-//echo $A; 
-?>
-ทดสอบ two <?php echo $sum; ?>
+a = <?php echo $a ;?><br>
+b = <?php echo $b ;?><br>
+c = <?php echo $c ;?><br>
 
 
 
@@ -29,4 +19,12 @@ print_r($data3);
 
 
 ?>
+
+<?php
+
+$route1 = Yii::$app -> urlManager->createUrl('test/index') ;
+?>
+<br>
+<a href="<?=$route1?>"> หน้าเเรก </a>
+<br>
 
